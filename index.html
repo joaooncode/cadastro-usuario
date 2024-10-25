@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro JS</title>
+  </head>
+  <body>
+    <h1>Formulário de Cadastro</h1>
+    <section class="form">
+      <form action="#" id="form">
+        <label for="nomeInput">Nome</label>
+        <input type="text" value="" id="nomeInput" />
+        <br />
+        <label for="apelidoInput">Apelido</label>
+        <input type="text" id="apelidoInput" />
+        <br />
+        <label for="emailInput">Email</label>
+        <input type="email" id="emailInput" />
+        <br />
+        <label for="senhaInput">Senha</label>
+        <input type="password" id="senhaInput" />
+        <br />
+        <label for="enderecoInput">Endereço</label>
+        <input type="text" id="enderecoInput" />
+        <br />
+        <label for="sexoInput">Sexo</label>
+        <select id="sexoInput">
+          <option value="Masculino" id="masculino">Masculino</option>
+          <option value="Feminino" id="feminino">Feminino</option>
+        </select>
+        <button type="submit" id="btnForm" onclick="sendAlert()">
+          Cadastrar
+        </button>
+      </form>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
