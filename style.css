@@ -4,9 +4,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
 }
 
 body {
+  overflow: hidden;
+  font-size: 1.5rem;
   margin: 20px;
   min-width: 100vh;
   min-height: 100vh;
@@ -35,6 +39,12 @@ form {
   margin-top: 20px;
   color: #000;
   cursor: pointer;
+}
+
+#btnForm:hover {
+  background-color: rgb(16, 37, 41);
+  color: #fff;
+  border: none;
 }
 
 #masculino,

@@ -11,18 +11,26 @@ const btnForm = document.getElementById("btnForm");
 // funções
 
 function sendAlert() {
+  //validar se todos os campos estão preenchidos
   if (
-    nomeInput ||
-    apelidoInput ||
-    emailInput ||
-    senhaInput ||
-    enderecoInput ||
-    sexoInput === undefined
+    !nomeInput.value ||
+    !apelidoInput.value ||
+    !emailInput.value ||
+    !senhaInput.value ||
+    !enderecoInput.value ||
+    !sexoInput.value
   ) {
     alert("Campos Vazios");
   } else {
     alert(
       `Nome: ${nomeInput.value}\nApelido: ${apelidoInput.value}\nEndereço ${enderecoInput.value}\nSexo: ${sexoInput.value}`
     );
+    //limpar campos
+    nomeInput.value = "";
+    apelidoInput.value = "";
+    emailInput.value = "";
+    senhaInput.value = "";
+    enderecoInput.value = "";
+    sexoInput.value = "";
   }
 }
