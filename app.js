@@ -11,7 +11,18 @@ const btnForm = document.getElementById("btnForm");
 // funções
 
 function sendAlert() {
-  alert(
-    `Nome: ${nomeInput.value}\nApelido: ${apelidoInput.value}\nEndereço ${enderecoInput.value}\nSexo: ${sexoInput.value}`
-  );
+  if (
+    nomeInput ||
+    apelidoInput ||
+    emailInput ||
+    senhaInput ||
+    enderecoInput ||
+    sexoInput === undefined
+  ) {
+    alert("Campos Vazios");
+  } else {
+    alert(
+      `Nome: ${nomeInput.value}\nApelido: ${apelidoInput.value}\nEndereço ${enderecoInput.value}\nSexo: ${sexoInput.value}`
+    );
+  }
 }
